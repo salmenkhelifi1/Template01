@@ -1,0 +1,11 @@
+/* Start Global Rules */
+  *{
+    -webkit-box-sizing: border-box;
+-moz-box-sising: border-box;
+box-sising: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* End Global Rules */
