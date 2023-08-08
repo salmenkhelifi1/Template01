@@ -39,7 +39,7 @@ margin-right: auto;
 /* End Global Rules */
 /* Start header */
 .header {
-  display: 20px;
+  padding: 20px;
 }
 .header .container {
   display: flex;
@@ -114,10 +114,10 @@ width: 100%;}
 /* End header */
 /* <!-- Start Landing  --> */
 .landing {
-  background-image: url(../image/landing.jpg) ;
+  background-image: url(../image/landing.jpg);
   background-size: cover;
   height: calc(100vh - 64px);
-    position: relative;
+  position: relative;
 }
 .landing .intro-text {
   position: absolute;
@@ -126,35 +126,48 @@ width: 100%;}
   text-align: center;
   transform: translate(-50%, -50%);
   width: 320px;
-  max-width: 100%;}
-  .landing .intro-text h1 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 50px;
-    color: #10d1b6;
-  }
-  .landing .intro-text p {
-    font-size: 19px;
-    line-height: 1.8;
-  }
+  max-width: 100%;
+}
+.landing .intro-text .h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: #10CAB7;
+}
+.landing .intro-text p {
+  font-size: 19px;
+  line-height: 1.8;
+}
 /* <!-- End Landing  --> */
 /* <!-- Start Features --> */
 .features {
+  
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   background-color: var(--section-background);
 }
 .features .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-}
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+
 .features .feat {
+
+
+  width: calc(33.33% - 20px); /* Adjust the width as needed */
+  margin: 10px;
+
   padding: 20px;
+  box-sizing: border-box;
+ 
   text-align: center;
+  
 }
 .features .feat i {
-  color: var(--main-color);
+  color: #10CAB7;
 }
 .features .feat h3 {
   font-weight: 800;
@@ -166,3 +179,16 @@ width: 100%;}
   font-size: 17px;
 }
 /* <!-- End Features --> */
+/* <!-- Sart services --> */
+.services{
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.services .services-content .srv {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 100%;
+}
+
+/* <!-- End services --> */
