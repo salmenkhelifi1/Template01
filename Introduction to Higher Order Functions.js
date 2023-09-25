@@ -61,6 +61,23 @@ var prod= function (n){
 //  //   for(i=0;i<numbers.Length;i++){
 //     result=result+numbers[i] 
 //     return result }
+// More Practice
+// ex5
+
+
+
+function each(array,func) {
+    for (var i=0 ; i<array.length ; i++)
+        {
+            func(array[i])
+                 }
+}
+var capit=function (string){
+    ar.push(string.toUpperCase())
+    console.log(ar)
+}
+each(['salah','salmen','hedi'],capit)
+
 
 
 
